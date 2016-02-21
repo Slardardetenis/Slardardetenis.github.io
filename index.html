@@ -1,276 +1,924 @@
-<!DOCTYPE HTML>
-<!--
-	Prologue by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<!DOCTYPE html>
+<html lang="en">
 	<head>
-		<link rel="shortcut icon" href="images/gicon.ico" type="image/x-icon"/>
-		<title>Giovani Carrara Rodrigues</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="content-script-type" content="text/javascript" />
+		<meta http-equiv="content-style-type" content="text/css" />
+		<meta http-equiv="content-language" content="nl" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<meta name="author" content="Giovani Carrara Rodrigues" />
+		<meta name="description" content="I'm Giovani C R, a data scientist who likes to code." />
+		<meta name="keywords" content="Giovani Carrara Rodrigues, data scientist, php programer, R, SAS, Shiny" />
+		<meta name="robots" content="index, follow" />
+		<meta name="revisit-after" content="14 days" />
+
+		<title>Giovani Carrara Rodrigues - Data scientist - Interactive Resume</title>
+
+		<!-- Bootstrap core CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet" type="text/css" />
+		<link href="css/bootstrap.min.css" rel="stylesheet" />
+		<link href="style.css" rel="stylesheet" />
+
+		<link rel="shortcut icon" href="<?= BASE; ?>favicon.ico" type="image/x-icon" />
+		<link rel="icon" href="<?= BASE; ?>favicon.ico" type="image/x-icon" />
+
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+			<script src="js/respond.min.js"></script>
+		<![endif]-->
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<!-- Begin Inspectlet Embed Code -->
+		<script type="text/javascript" id="inspectletjs">
+			window.__insp = window.__insp || [];
+			__insp.push(['wid', 92785244]);
+			(function() {
+				function __ldinsp(){var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://www.inspectlet.com/inspectlet.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); }
+				if (window.attachEvent){
+					window.attachEvent('onload', __ldinsp);
+				}else{
+					window.addEventListener('load', __ldinsp, false);
+				}
+			})();
+		</script>
+		<!-- End Inspectlet Embed Code -->
 	</head>
-	<body>
+	<body data-spy="scroll" data-target="#navbar-example">
+		<div id="top" class="jumbotron" data-src="<?= $current_header['source']; ?>" data-position="<?= $current_header['position']; ?>">
+			<div class="container">
+				<h1>Giovani Carrara Rodrigues</h1>
+				<p class="lead">Interactive Resume</p>
+			</div>
 
-		<!-- Header -->
-			<div id="header">
+			<div class="overlay"></div>
 
-				<div class="top">
+			<a href="#profile" class="scroll-down">
+				<span class="glyphicon glyphicon-chevron-down"></span>
+			</a>
+		</div>
 
-					<!-- Logo -->
-						<div id="logo">
-							<span class="image avatar48"><img src="images/face.jpg" alt="" /></span>
-							<h1 id="title">Giovani C R</h1>
-							<p>Estudante de Estatística</p>
-						</div>
+		<nav class="navbar navbar-default" id="navbar-example" role="navigation">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
 
-					<!-- Nav -->
-						<nav id="nav">
-							<!--
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#profile">Profile</a></li>
+					<li><a href="#experiences">Experiences</a></li>
+					<li><a href="#abilities">Abilities</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</nav>
 
-								Prologue's nav expects links in one of two formats:
+		<div class="background-white">
+			<div id="profile" class="container">
+				<h2>Profile</h2>
+<p class="lead">I'm a data scientist who likes to code</p>
 
-								1. Hash link (scrolls to a different section within the page)
+<hr>
 
-								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+<div class="row">
+	<div class="col-md-4">
+		<h3>About me</h3>
+		<p>
+			It sounds a little weird to talk about myself at the third person...
+			So, I'll talk at the first.
+			I always liked math and computation, but one is much theoretical and the other one I just saw in a applied way. So...which one should I choose? theoretical or applied?
+			Why not both? the graduation in statistic can propose this mix, and that's why I chosen this course.
+			Ahhh!!!...I almost forgot, I love to play video games ;)
+		</p>
+	</div>
+	<div class="col-md-4 text-center">
+		<!--
+		<img src="" alt="Giovani Carrara Rodrigues" width="246" height="246">
+		-->
+	</div>
+	<div class="col-md-4">
+		<h3>Details</h3>
+		<p>
+			<strong>Name:</strong><br>
+			Giovani Carara Rodrigues<br>
+			<strong>Location:</strong><br>
+			'São Carlos-SP, Brazil, Earth		</p>
+		<!--twitter button
+		<iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-follow-button twitter-follow-button-rendered" title="Twitter Follow Button" src="http://platform.twitter.com/widgets/follow_button.0c57aa7774518fa5b28fb8c43d0dc07e.en.html#dnt=false&amp;id=twitter-widget-0&amp;lang=en&amp;screen_name=pascalvgemert&amp;show_count=false&amp;show_screen_name=false&amp;size=l&amp;time=1455987077394" style="position: static; visibility: visible; width: 79px; height: 28px;" data-screen-name="pascalvgemert"></iframe>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+		-->
+	</div>
+</div>			</div>
+		</div>
 
-								2. Standard link (sends the user to another page/site)
 
-								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+		<div id="experiences" class="container">
+			<h2>Experiences</h2>
+<p class="lead">
+	“Protons give an atom its identity, electrons its personality.”<br>- Bill Bryson, A short history of nearly everything
+</p>
 
-							-->
-							<ul>
-								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
-								<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Habilidades</span></a></li>
-								<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">Sobre mim</span></a></li>
-								<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contato</span></a></li>
-							</ul>
+<hr>
 
-							<div class="lang">
-								<a href="index2.html"><img src="images/uk.png" alt=""/> </a>
-							</div>
+<!--<div class="alert alert-danger">
+	<strong>Looking for an awesome new challenge somewhere in the neighborhood of Den Bosch or Amsterdam as a Creative PHP Web Developer. </strong>
+</div>-->
 
-						</nav>
+<h3>Education</h3>
 
+
+<div class="experiences">
+
+
+
+
+
+
+
+	<div class="experience row">
+		<div class="col-md-4">
+			<h4>University of São Paulo</h4>
+			<p class="experience-period">
+				conclusion: december,2016		</p>
+		</div>
+		<div class="col-md-8">
+			<p>
+				<strong>BACHELOR OF STATISTICS</strong>
+				<span class="hidden-phone">
+				</span>
+				<span class="experience-details">
+					<span class="location">
+						<span class="glyphicon glyphicon-map-marker"></span>
+						São Carlos-SP					</span>
+
+
+					<span class="seperator">|</span>
+					<span class="link">
+						<span class="glyphicon glyphicon-link"></span>
+						<a href="http://www5.usp.br/english/?lang=en" target="_blank">http://www5.usp.br/</a>
+					</span>
+
+
+				</span>
+			</p>
+		</div>
+	</div>
+
+</div>
+<h3>Research</h3>
+
+	<div class="experiences">
+		<div class="experience row">
+			<div class="col-md-4">
+				<h4>Methods of estimation</h4>
+				<p class="experience-period">
+					May 2015				-
+					December 2015			</p>
+			</div>
+			<div class="col-md-8">
+				<p>
+					<strong>Poisson-Exponential Distribution:
+						Different Methods of Estimation</strong>
+					<span class="hidden-phone">
+						I worked with the professor Francisco Louzada Neto, where the main goal forthis
+						research was to discovery between 10 classical methods of estimation the best one
+						to estimate the parameters of the Poisson-Exponential distribution and the
+						application of this study was to help the prevention of flood orlack of water at São
+						Carlos city, São Paulo.</span>
+					<span class="experience-details">
+						<span class="location">
+							<span class="glyphicon glyphicon-map-marker"></span>
+							São Carlos-SP					</span>
+
+							<span class="seperator">|</span>
+							<span class="link">
+								<span class="glyphicon glyphicon-link"></span>
+								<a href="http://www.mwstat.com/franciscolouzada/Welcome.html" target="_blank">Professor's website</a>
+							</span>
+
+
+					</span>
+				</p>
+			</div>
+		</div>
+
+
+	</div>
+	<h3>Events</h3>
+		<div class="experiences">
+			<div class="experience row">
+				<div class="col-md-4">
+					<h4>CEMEAI</h4>
+					<p class="experience-period">
+						September 8,9,10 and 11 of 2015</p>
+				</div>
+				<div class="col-md-8">
+					<p>
+						<strong>
+							1&deg; First Brazilian Study Group with Industry</strong>
+						<span class="hidden-phone">
+							Within a team ofresearches and graduation students, we worked to get a statistical
+							model forthe theme ”Fraud Detection from Complex Networks” proposed by
+							SERASA Experian.</span>
+						<span class="experience-details">
+							<span class="location">
+								<span class="glyphicon glyphicon-map-marker"></span>
+								São Carlos-SP					</span>
+
+								<span class="seperator">|</span>
+								<span class="link">
+									<span class="glyphicon glyphicon-link"></span>
+									<a href="http://www.cemeai.icmc.usp.br/1WSMPI/index_en.html" target="_blank">Website of the Event</a>
+								</span>
+
+
+						</span>
+					</p>
+				</div>
+			</div>
+
+
+		</div>
+		<h3>Jobs</h3>
+			<div class="experiences">
+				<div class="experience row">
+					<div class="col-md-4">
+						<h4>Monitor</h4>
+						<p class="experience-period">
+							August 2013 -
+							July 2014 </p>
+					</div>
+					<div class="col-md-8">
+						<p>
+							<strong>
+								Guided Visits To The University of São Paulo Science Museum</strong>
+							<span class="hidden-phone">
+								I worked as monitor, where with my coworkers ourjob was to coordinate, make
+								presentations and explain each museum area from the CDCC(USP).</span>
+							<span class="experience-details">
+								<span class="location">
+									<span class="glyphicon glyphicon-map-marker"></span>
+									São Carlos-SP					</span>
+
+									<span class="seperator">|</span>
+									<span class="link">
+										<span class="glyphicon glyphicon-link"></span>
+										<a href="http://www.cdcc.usp.br/" target="_blank">http://www.cdcc.usp.br/</a>
+									</span>
+
+
+							</span>
+						</p>
+					</div>
 				</div>
 
-				<div class="bottom">
-
-					<!-- Social Icons -->
-						<ul class="icons">
-							<!--
-							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-						-->
-							<li><a href="https://github.com/Slardardetenis" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
-							<li><a href="https://br.linkedin.com/pub/giovani-carrara-rodrigues/b8/93b/70" target="_blank" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
-							<!--<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>-->
-						</ul>
-
-				</div>
 
 			</div>
 
-		<!-- Main -->
-			<div id="main">
-
-				<!-- Intro -->
-					<section id="top" class="one dark cover">
-						<div class="container">
-
-							<header>
-								<h2 class="alt">Oi! Eu sou o <strong>Giovani C R</strong>,<br> graduando em
-									<strong>Estatística</strong> pela <strong>Universidade de São Paulo</strong>
-								 	à procura de estágio. Clique <strong>Abaixo</strong> para saber mais sobre mim.
-								</h2>
-								<p></p>
-							</header>
-
-							<footer>
-								<a href="#portfolio" class="button scrolly">Abaixo</a>
-							</footer>
-
-						</div>
-					</section>
-
-				<!-- Portfolio -->
-					<section id="portfolio"  class="two">
-						<div class="container">
-
-							<header>
-								<h2 style="color:#1E90FF">Habilidades</h2>
-							</header>
-
-							<h3>Meu nível em cada uma dessas ferramentas e linguagens de programação.</h3>
-
-							<div class="row">
-								<div class="4u 12u$(mobile)">
-									<article class="item">
-										<a  class="image fit"><img src="images/phpmysql.png" alt="" /></a>
-										<header>
-											<h3><em>Médio</em></h3>
-										</header>
-									</article>
-									<article class="item">
-										<a  class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-										<header>
-											<h3>Médio</h3>
-										</header>
-									</article>
-								</div>
-								<div class="4u 12u$(mobile)">
-									<article class="item">
-										<a  class="image fit"><img src="images/pic04.jpg" alt="" /></a>
-										<header>
-											<h3>Médio</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a  class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-										<header>
-											<h3>Médio</h3>
-										</header>
-									</article>
-								</div>
-								<div class="4u$ 12u$(mobile)">
-									<article class="item">
-										<a  class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-										<header>
-											<h3>Avançado</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-										<header>
-											<h3>Médio</h3>
-										</header>
-									</article>
-								</div>
-							</div>
-
-							<h2 style="color:#1E90FF">Idiomas</h2>
-							<h3>Portugues: Nativo</h3>
-							<h3>Inglês: avançado</h3>
-
-							<h2 style="color:#1E90FF">Coisas que tenho feito</h2>
-
-							<div class="row">
-								<div class="4u 12u$(mobile)">
-									<article class="item">
-										<a href="https://slardardetenis.shinyapps.io/popcorn" target="_blank" class="image fit"><img src="images/popcorn.jpg" alt="" /></a>
-										<header>
-											<h3>Aplicativo Shiny+R: apresentação trabalho da faculdade</h3>
-										</header>
-									</article>
-								</div>
-
-								<div class="4u 12u$(mobile)">
-									<article class="item">
-										<a href="https://prezi.com/oxouivof-lnv/cinema-and-oscar/" target="_blank" class="image fit"><img src="images/cineprezi.jpg" alt="" /></a>
-										<header>
-											<h3>Apresentação:Cinema and Oscar</h3>
-										</header>
-									</article>
-								</div>
-
-								<div class="4u 12u$(mobile)">
-									<article class="item">
-										<a href="https://drive.google.com/file/d/0BzP9JsgEYqpmaDk1R0lDbWpuTjg/view" target="_blank" class="image fit"><img src="images/serasa.png" alt="" /></a>
-										<header>
-											<h3> Análise de Redes Socias na Detecção de Fraudes</h3>
-											<h3>Empresa - Serasa Experian</h3>
-										</header>
-									</article>
-								</div>
-
-								<div class="row">
-									<div class="4u 12u$(mobile)">
-										<article class="item">
-											<a href="http://rpubs.com/Giovani/ts4" target="_blank" class="image fit"><img src="images/ts2.jpg" alt="" /></a>
-											<header>
-												<h3>Utilizando modelos ARIMA para modelar uma Série Temporal</h3>
-											</header>
-										</article>
-									</div>
-
-							</div>
 
 
-						</div>
-					</section>
+		</div>
 
-				<!-- About Me -->
-					<section id="about" class="three">
-						<div class="container">
+		<div class="background-white">
+			<div id="abilities" class="container">
+				<h2>Abilities</h2>
+<p class="lead">
+	“Life without knowledge is death in disguise.”<br>- Talib Kweli
+</p>
 
-							<header>
-								<h2 style="color:#1E90FF">Sobre mim</h2>
-							</header>
+<hr>
 
-							<a class="image featured"><img src="images/pic08.jpg" alt="" /></a>
-							<h3>Acho estranho falar de mim na terceira pessoa...</h3>
-							<h4>
-							Sempre gostei de matemática e computação, mas uma  era muito teorica e a outra eu só via como aplicada<br>
-							e agora....teoria ou prática? Por que não os dois? a Estatística pode proporcionar essa mistura, e foi <br>
-							por isso que eu à escolhi.<br>
-							<br>
-							Ahhh!!!...sim, eu adoro jogar video games ;)
-							</h4>
+<h3>Skills</h3>
 
-						</div>
-					</section>
+<div class="row">
 
-				<!-- Contact -->
-					<section id="contact" class="four">
-						<div class="container">
 
-							<header>
-								<h2 style="color:#1E90FF">Contato</h2>
-							</header>
+	<div class="col-md-6">
+		<ul class="no-bullets">
 
-							<form method="post" action="http://formtoemail.com/user_forms.php">
-								<input type="hidden" name="user_id" value="RZK4C8CH17EDMWD8L60G">
-								<input type="hidden" name="form_id" value="1">
-								<div class="row">
-									<div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Email" /></div>
-									<div class="12u$">
-										<textarea name="message" placeholder="Message"></textarea>
-									</div>
-									<div class="12u$">
-										<input type="submit" value="Enviar" />
-									</div>
-								</div>
-							</form>
 
-						</div>
-					</section>
+			<li>
+				<span class="ability-title">R</span>
+				<span class="ability-score">
 
-			</div>
 
-		<!-- Footer -->
-			<div id="footer">
+					<span class="glyphicon glyphicon-star filled"></span>
 
-				<!-- Copyright -->
-					<ul class="copyright">
-						<li>&copy; Giovani C R. All rights reserved.</li>
-					</ul>
 
-			</div>
+					<span class="glyphicon glyphicon-star filled"></span>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollzer.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
 
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star"></span>
+
+
+				</span>
+			</li>
+
+
+
+			<li>
+				<span class="ability-title">SAS</span>
+				<span class="ability-score">
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star "></span>
+
+
+					<span class="glyphicon glyphicon-star "></span>
+
+
+				</span>
+			</li>
+
+			<li>
+				<span class="ability-title">Python</span>
+				<span class="ability-score">
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star "></span>
+
+
+					<span class="glyphicon glyphicon-star "></span>
+
+
+				</span>
+			</li>
+
+			<li>
+				<span class="ability-title">PHP</span>
+				<span class="ability-score">
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star "></span>
+
+
+					<span class="glyphicon glyphicon-star "></span>
+
+
+				</span>
+			</li>
+
+
+
+			<li>
+				<span class="ability-title">HTML(5)</span>
+				<span class="ability-score">
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star "></span>
+
+
+				</span>
+			</li>
+
+
+
+			<li>
+				<span class="ability-title">CSS(3)</span>
+				<span class="ability-score">
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star "></span>
+
+
+					<span class="glyphicon glyphicon-star "></span>
+
+
+				</span>
+			</li>
+
+			<li>
+				<span class="ability-title">javascript</span>
+				<span class="ability-score">
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star "></span>
+
+
+					<span class="glyphicon glyphicon-star "></span>
+
+
+					<span class="glyphicon glyphicon-star "></span>
+
+
+				</span>
+			</li>
+
+			<li>
+				<span class="ability-title">Git</span>
+				<span class="ability-score">
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star "></span>
+
+
+				</span>
+			</li>
+
+		</ul>
+	</div>
+	<div class="col-md-6">
+		<ul class="no-bullets">
+
+
+
+			<li>
+				<span class="ability-title">R | Shiny</span>
+				<span class="ability-score">
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star "></span>
+
+
+				</span>
+			</li>
+
+
+
+			<li>
+				<span class="ability-title">Prezi</span>
+				<span class="ability-score">
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+				</span>
+			</li>
+
+			<li>
+				<span class="ability-title">Python | Anaconda</span>
+				<span class="ability-score">
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star "></span>
+
+
+					<span class="glyphicon glyphicon-star "></span>
+
+
+				</span>
+			</li>
+
+			<li>
+				<span class="ability-title">MySQL</span>
+				<span class="ability-score">
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star "></span>
+
+
+					<span class="glyphicon glyphicon-star "></span>
+
+
+				</span>
+			</li>
+
+
+
+			<li>
+				<span class="ability-title">Machine Learning</span>
+				<span class="ability-score">
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star "></span>
+
+
+				</span>
+			</li>
+
+
+
+			<li>
+				<span class="ability-title">MS Office</span>
+				<span class="ability-score">
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star "></span>
+
+
+				</span>
+			</li>
+
+			<li>
+				<span class="ability-title">Linux(Ubuntu)</span>
+				<span class="ability-score">
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star "></span>
+
+
+				</span>
+			</li>
+
+			<li>
+				<span class="ability-title">OpenShift</span>
+				<span class="ability-score">
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star "></span>
+
+
+					<span class="glyphicon glyphicon-star "></span>
+
+
+					<span class="glyphicon glyphicon-star "></span>
+
+
+				</span>
+			</li>
+
+		</ul>
+	</div>
+
+
+</div>
+<!--
+<div class="text-center project-referal">
+	<p>This project is build on a custom made PHP framework.</p>
+	<a href="https://github.com/pascalvgemert/resume" class="btn btn-primary" target="_blank">See project on Github</a>
+</div>
+-->
+
+<hr>
+
+<h3>Languages</h3>
+
+<div class="row">
+
+
+	<div class="col-md-6">
+		<ul class="no-bullets">
+
+			<li>
+				<span class="ability-title">English (Advanced)</span>
+				<span class="ability-score">
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star "></span>
+
+
+				</span>
+			</li>
+
+
+
+		</ul>
+	</div>
+	<div class="col-md-6">
+		<ul class="no-bullets">
+
+
+
+			<li>
+				<span class="ability-title">Portuguese (Mother tongue)</span>
+				<span class="ability-score">
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+					<span class="glyphicon glyphicon-star filled"></span>
+
+
+				</span>
+			</li>
+
+		</ul>
+	</div>
+
+
+</div>
+
+<hr>
+
+</div>
+
+	</div>
+	<div id="projects" class="container">
+		<h2>Projects</h2>
+<p class="lead">
+Some things I have done so far.
+</p>
+
+<hr>
+
+
+<div class="row">
+
+
+<div class="col-md-6 col-sm-12 col-xs-12">
+	<figure class="effect">
+		<img src="images/popcorn.jpg" alt=" shiny popcorn">
+
+		<figcaption>
+			<h3>R|Shiny:Popcorn</h3>
+			<p>Popcorn, a study about how good the popcorn brand are.</p>
+			<p><strong>Tags:</strong> <br>Development, shiny, Anova</p>
+			<a href="https://slardardetenis.shinyapps.io/popcorn/" target="_blank">View more</a>
+			<span class="icon">
+				<span class="glyphicon glyphicon-new-window"></span>
+			</span>
+		</figcaption>
+	</figure>
+</div>
+
+
+<div class="col-md-6 col-sm-12 col-xs-12">
+	<figure class="effect">
+		<img src="images/cineprezi.jpg" alt="Prezi cinema oscar">
+
+		<figcaption>
+			<h3>Prezi</h3>
+			<p>A little about te cinema and oscar</p>
+			<p><strong>Tags:</strong> <br>Development, Prezi, Cinema, Oscar</p>
+			<a href="https://prezi.com/oxouivof-lnv/cinema-and-oscar/" target="_blank">View more</a>
+			<span class="icon">
+				<span class="glyphicon glyphicon-new-window"></span>
+			</span>
+		</figcaption>
+	</figure>
+</div>
+
+
+<div class="col-md-6 col-sm-12 col-xs-12">
+	<figure class="effect">
+		<img src="images/serasa.jpg" alt="Serasa Event">
+
+		<figcaption>
+			<h3>1&deg; First Brazilian</h3>
+			<p>study group with industry</p>
+			<p><strong>Tags:</strong> <br>Design, Development, SEMEAI, SERASA</p>
+			<a href="http://soaphair.nl" target="_blank">View more</a>
+			<span class="icon">
+				<span class="glyphicon glyphicon-new-window"></span>
+			</span>
+		</figcaption>
+	</figure>
+</div>
+
+
+<div class="col-md-6 col-sm-12 col-xs-12">
+	<figure class="effect">
+		<img src="images/ts2.jpg" alt="time series arima models">
+
+		<figcaption>
+			<h3>Fitting a time-series at R</h3>
+			<p>Arima models: Daily maximum temperatures in Melbourne</p>
+			<p><strong>Tags:</strong> <br>Development, Bootstrap, Wordpress</p>
+			<a href="http://rpubs.com/Giovani/ts4" target="_blank">View more</a>
+			<span class="icon">
+				<span class="glyphicon glyphicon-new-window"></span>
+			</span>
+		</figcaption>
+	</figure>
+</div>
+
+</div>
+
+	</div>
+
+	<div class="background-gray">
+		<div id="contact" class="container">
+			<h2>Contact</h2>
+<p class="lead">
+“If I had asked people what they wanted, they would have said faster horses. ”<br>- Henry Ford
+</p>
+
+<hr>
+
+<div class="row">
+<div class="col-md-6">
+	<ul class="no-bullets">
+		<li>
+			<a href="https://github.com/Slardardetenis" target="_blank">
+				<span class=""><i class="fa fa-github fa-3x"></i></span>
+				https://github.com/Slardardetenis				</a>
+		</li>
+	</ul>
+</div>
+<div class="col-md-6">
+	<ul class="no-bullets">
+		<li>
+			<a href="https://www.linkedin.com/in/giovanicr" target="_blank">
+				<span class=""><i class="fa fa-linkedin-square fa-3x"></i></span>
+				https://www.linkedin.com/in/giovanicr				</a>
+		</li>
+	</ul>
+</div>
+</div>
+
+<hr>
+
+	</div>
+	</div>
+
+		<!-- Bootstrap core JavaScript -->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+		<!-- Google Analytics -->
+		<script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-3361587-8']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		</script>
 	</body>
 </html>
